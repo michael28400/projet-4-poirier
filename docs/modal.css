@@ -131,14 +131,13 @@
                 height: 100%;
                 width: 100%;
                 overflow: auto;
-               
              }
+             
              
              .bground span {
                 display: flex;
                 font-size: 0.8rem;
             }
-            
            
              .content {
                 margin-top: 5rem;
@@ -508,6 +507,7 @@
 
              
              #confirmation{
+                 display: none;
                 position: absolute;
                 width: 90%;
                 height: 95%;
@@ -515,7 +515,7 @@
                 text-align: center;
                 top: -1rem;
                 z-index: 200;
-                margin-top: 2rem;
+                margin-top: 20rem;
                 
             }
 
@@ -576,6 +576,10 @@
              }
              
              @media screen and (max-width: 768px) {
+                .topnav{
+                    display: flex;
+                }
+                
                  .main-navbar {
                      margin-right: 2rem;
                  }
@@ -599,6 +603,8 @@
                      display: block;
                      text-align: left;
                  }
+
+                 
              }
              
              @media screen and (max-width: 1050px) {
@@ -664,4 +670,6 @@
                  .content{
                    margin-left: 35%;
                  }
-             }
+                   
+               }
+             

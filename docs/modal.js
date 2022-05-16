@@ -20,11 +20,14 @@ const modalCloseCroix = document.querySelector(".close");
 const modalbg = document.querySelector(".bground");
 const btnSignup = document.querySelector(".btn-signup");
 const closeBouton = document.querySelector("#validate_input");
-
+const closeMain = document.querySelector("#mainclose");
+const topNav = document.querySelector(".topnav");
+const copy = document.querySelector(".copyrights");
 // variables 
 let closeModal = document.querySelector("#closeModal");
 let closeModal2 = document.querySelector("#closeModal2");
 let myForm = document.querySelector("#form");
+
 
 // lance modal  sur le bouton par le click
 modalBtn.forEach((btn) => btn.addEventListener("click", launchModal));
@@ -32,8 +35,20 @@ modalBtn.forEach((btn) => btn.addEventListener("click", launchModal));
 // permet d'ouvrir la modal background
 
 function launchModal() {
-    comfirmation.style.display = "none";
-    modalbg.style.display = "block";
+
+    if(window.matchMedia("(max-width: 768px)").matches) {
+        modalbg.style.display = "block";
+        topNav.style.display = "block";
+        closeMain.style.display = "none";
+        copy.style.display = "none";
+      
+    } else {
+        modalbg.style.display = "block";
+        topNav.style.display = "none";
+        closeMain.style.display = "none";
+        copy.style.display = "none";
+        
+    }
 
 }
 
@@ -129,11 +144,10 @@ function modalClose() {
     document.location.reload();
 }
 
-
-  
 // fermeture  modal confirmation bouton croix
 closeModal2.addEventListener('click', function()  {
     comfirmation.style.display ="none";
+    document.location.reload();
 })
 
 // fermeture modal de confirmation bouton fermer
