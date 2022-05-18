@@ -176,14 +176,6 @@ form.addEventListener("submit", (e) => {
 
 
 
- 
-
-  
-
-
-
-
-
 
 
 

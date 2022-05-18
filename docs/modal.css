@@ -510,13 +510,12 @@
                  display: none;
                 position: absolute;
                 width: 90%;
-                height: 95%;
-                background-color: #232323;
+                height: 99%;
+                background-color: ;
                 text-align: center;
                 top: -1rem;
                 z-index: 200;
-                margin-top: 20rem;
-                
+                background-color: #232323;
             }
 
             #confirmation p{
@@ -532,7 +531,7 @@
             }
 
             #validate_input{
-               background-color: #fe142f;
+               background-color: #fe141f;
                color: white;
                border: 25px;
                border-radius: 10px;
@@ -541,6 +540,10 @@
                width: 141.5px;
                height: 31px;
                font-size: 0.4em;
+            }
+
+            #closeModal2{
+                margin-top: 1.5rem;
             }
             
              .copyrights {
